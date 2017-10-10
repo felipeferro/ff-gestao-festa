@@ -20,7 +20,7 @@
 		<form class="form-inline" method="POST" th:object="${convidado}" th:action="@{/convidados}" style="margin: 20px 15px">
 			<div class="form-group">
 				<input type="text" class="form-control" placeholder="Nome" th:field="*{nome}" /> 
-				<input type="text" class="form-control" placeholder="Acompanhantes" th:field="*{quantidadeAcompanhantes}" />
+				<input type="text" class="form-control" placeholder="qtd Acompanhantes" th:field="*{quantidadeAcompanhantes}" />
 				<button type="submit" class="btn btn-primary">Adicionar</button>
 			</div>
 		</form>
