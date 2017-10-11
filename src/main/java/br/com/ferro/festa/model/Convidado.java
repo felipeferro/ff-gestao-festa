@@ -4,6 +4,7 @@ import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -17,8 +18,10 @@ public class Convidado implements Serializable{
 		@GenericGenerator(name = "increment", strategy = "increment")
 		private Long id;
 		
+		@NotNull
 		private String nome;
 		
+		@NotNull
 		private Integer quantidadeAcompanhantes;
 
 		public Long getId() {
